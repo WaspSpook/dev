@@ -1,8 +1,8 @@
-# задаем переменную с просьбой в вести год.
-year = int(input('Введите год: '))
+# работа со словами
 
-if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
-    print('YES')
+word = 'test'
+if len(word) % 2 == 1:
+    print(word[len(word) // 2])
 else:
-    print('NO')
+    print(word[len(word) // 2 - 1: len(word) // 2 + 1])
 
